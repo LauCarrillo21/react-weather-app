@@ -1,22 +1,17 @@
 import React from "react";
-import './App.css';
 import Weather from "./Weather";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
-   <div className='App'>
-    <div className="container">
-    <Weather defaultCity="Rome"/>
-      <footer>
-        This project was coded by
-        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer"> Lau Carrillo
-        </a> and is
-        <a href="https://github.com/LauCarrillo21/react-weather-app" target="_blank" rel="noreferrer"> open-sourced on Github
-        </a>
-      </footer>
+    <div className="App">
+      <div className="container">
+        <Weather defaultCity="New York" />
+
+        <footer>
+          This project was coded by Lau Carrillo
+        </footer>
       </div>
-   </div>
+    </div>
   );
 }
-
-export default App;
